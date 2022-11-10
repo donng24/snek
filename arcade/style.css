@@ -1,0 +1,9 @@
+canvas{
+margin: 25px;
+padding: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: black 20px 10px 50px;
+}

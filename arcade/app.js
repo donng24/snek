@@ -57,7 +57,6 @@ function drawSnake(){
 let xvelocity=0;
 let yvelocity=0;
 
-
 document.body.addEventListener('keydown', keyDown);
 
 function changePosition(){
@@ -83,7 +82,7 @@ function changePosition(){
          xvelocity=0;
      }
  
- //left
+     //left
      if(event.keyCode==37){
          if(xvelocity==1)
          return;
@@ -167,7 +166,6 @@ function restart(){
 }
 
 
-
 ///////////////////////////////////////////////////////////////////////
 //function where the whole game is called
 function drawGame(){
@@ -183,11 +181,7 @@ function drawGame(){
    apple();
    headCollision();
    keepScore();
-
    setTimeout(drawGame, 1000/speed);
-
-   console.log(snakeTail)
 }
-
 
 drawGame();
